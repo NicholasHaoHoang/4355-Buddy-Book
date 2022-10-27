@@ -16,6 +16,9 @@
 		3FE5A610290A7ED6000D2B45 /* Buddy_BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE5A60F290A7ED6000D2B45 /* Buddy_BookTests.swift */; };
 		3FE5A61A290A7ED7000D2B45 /* Buddy_BookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE5A619290A7ED7000D2B45 /* Buddy_BookUITests.swift */; };
 		3FE5A61C290A7ED7000D2B45 /* Buddy_BookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE5A61B290A7ED7000D2B45 /* Buddy_BookUITestsLaunchTests.swift */; };
+		3FE5A629290AB4D8000D2B45 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE5A628290AB4D8000D2B45 /* CollectionViewCell.swift */; };
+		3FE5A62B290AB70F000D2B45 /* BuddyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE5A62A290AB70F000D2B45 /* BuddyListViewController.swift */; };
+		3FE5A62D290AB77F000D2B45 /* Buddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE5A62C290AB77F000D2B45 /* Buddy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		3FE5A615290A7ED7000D2B45 /* Buddy-BookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Buddy-BookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE5A619290A7ED7000D2B45 /* Buddy_BookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buddy_BookUITests.swift; sourceTree = "<group>"; };
 		3FE5A61B290A7ED7000D2B45 /* Buddy_BookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buddy_BookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3FE5A628290AB4D8000D2B45 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		3FE5A62A290AB70F000D2B45 /* BuddyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyListViewController.swift; sourceTree = "<group>"; };
+		3FE5A62C290AB77F000D2B45 /* Buddy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buddy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				3FE5A601290A7ED6000D2B45 /* Assets.xcassets */,
 				3FE5A603290A7ED6000D2B45 /* LaunchScreen.storyboard */,
 				3FE5A606290A7ED6000D2B45 /* Info.plist */,
+				3FE5A628290AB4D8000D2B45 /* CollectionViewCell.swift */,
+				3FE5A62A290AB70F000D2B45 /* BuddyListViewController.swift */,
+				3FE5A62C290AB77F000D2B45 /* Buddy.swift */,
 			);
 			path = "Buddy-Book";
 			sourceTree = "<group>";
@@ -260,7 +269,10 @@
 			files = (
 				3FE5A5FD290A7ED0000D2B45 /* ViewController.swift in Sources */,
 				3FE5A5F9290A7ED0000D2B45 /* AppDelegate.swift in Sources */,
+				3FE5A629290AB4D8000D2B45 /* CollectionViewCell.swift in Sources */,
 				3FE5A5FB290A7ED0000D2B45 /* SceneDelegate.swift in Sources */,
+				3FE5A62D290AB77F000D2B45 /* Buddy.swift in Sources */,
+				3FE5A62B290AB70F000D2B45 /* BuddyListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

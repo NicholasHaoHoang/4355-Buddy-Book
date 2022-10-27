@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "pngtree-colorful-dark-green-cartoon-smiling-face-clipart-face-clipart-avatar-smiling-png-image_5658624.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
