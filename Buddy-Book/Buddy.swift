@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class Buddy{
+    //parameters
     var name = ""
     var profilePicture: UIImage
     
