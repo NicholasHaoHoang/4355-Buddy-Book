@@ -27,7 +27,10 @@ class CollectionViewCell: UICollectionViewCell{
             profilePicture.image = nil
             nameLabel.text = nil
         }
-        profilePicture.layer.cornerRadius = 10.0
+        profilePicture.layer.cornerRadius = profilePicture.frame.size.width/2
+        profilePicture.layer.borderColor = UIColor.blue.cgColor
+        profilePicture.layer.borderWidth = 3
+        profilePicture.clipsToBounds = true
         profilePicture.layer.masksToBounds = true
     }
 }
