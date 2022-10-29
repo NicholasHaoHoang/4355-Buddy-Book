@@ -1,8 +1,6 @@
 //
-//  Buddy.swift
-//  Buddy-Book
-//
-//  Created by student on 10/27/22.
+//  Buddy class
+//  Abstract class that defines the buddy
 //
 
 import Foundation
@@ -13,11 +11,19 @@ class Buddy{
     var name = ""
     var profilePicture: UIImage
     
+    //default constructor
+    init(){
+        self.name = ""
+        self.profilePicture = UIImage()
+    }
+    
+    //constructor with parameters
     init(name: String, profilePicture: UIImage){
         self.name = name
         self.profilePicture = profilePicture
     }
     
+    //Dummy Data
     static func fetchBuddys() -> [Buddy]{
         return [
             Buddy(name: "Bob", profilePicture: UIImage(named: "bobProfilePic")!),

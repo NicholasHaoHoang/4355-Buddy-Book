@@ -10,6 +10,7 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell{
     
+    //IBOutlets
     @IBOutlet weak var profilePicture: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -21,16 +22,22 @@ class CollectionViewCell: UICollectionViewCell{
     
     func updateUI(){
         if let buddy = buddy{
+            //Sets parameters if not empty
             profilePicture.image = buddy.profilePicture
             nameLabel.text = buddy.name
         }else{
+            //Else set to null
             profilePicture.image = nil
             nameLabel.text = nil
         }
+        
+        //This part rounds the profile picture so it's a circle instead of a square
         profilePicture.layer.cornerRadius = profilePicture.frame.size.width/2
-        profilePicture.layer.borderColor = UIColor.blue.cgColor
-        profilePicture.layer.borderWidth = 3
         profilePicture.clipsToBounds = true
         profilePicture.layer.masksToBounds = true
+        
+        //border of profile picture
+        profilePicture.layer.borderColor = UIColor.purple.cgColor
+        profilePicture.layer.borderWidth = 3
     }
 }
