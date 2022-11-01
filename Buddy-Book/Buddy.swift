@@ -23,7 +23,7 @@ class Buddy{
     init(name: String, profilePicture: UIImage, isFav:Bool=false){
         self.name = name
         self.profilePicture = profilePicture
-        self.isFav = isFav
+        self.isFav = isFav 
     }
     
     //Dummy Data
