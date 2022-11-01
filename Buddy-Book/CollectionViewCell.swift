@@ -19,6 +19,7 @@ class CollectionViewCell: UICollectionViewCell{
     @IBOutlet weak var birthday: UILabel!
     @IBOutlet weak var height: UILabel!
     @IBOutlet weak var weight: UILabel!
+    @IBOutlet weak var favButton: UIButton!
     
     var buddy: Buddy! {
         didSet{
@@ -26,17 +27,31 @@ class CollectionViewCell: UICollectionViewCell{
         }
     }
     
+    //How to mark as favorite
+    @objc private func handleMarkAsFavorite(){
+        buddy.isFav = !buddy.isFav
+        updateUI()
+    }
+    
     func updateUI(){
         if let buddy = buddy{
             //Sets parameters if not empty
             profilePicture.image = buddy.profilePicture
             nameLabel.text = buddy.name
+            if(buddy.isFav){
+                favButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
+            }else{
+                favButton.setImage(UIImage(systemName: "star"), for: .normal)
+            }
             
         }else{
             //Else set to null
             profilePicture.image = nil
             nameLabel.text = nil
         }
+        
+        //set target for fav Button
+        favButton.addTarget(self, action: #selector(handleMarkAsFavorite), for: .touchUpInside)
         
         //This part rounds the profile picture so it's a circle instead of a square
         profilePicture.layer.cornerRadius = profilePicture.frame.size.width/2
