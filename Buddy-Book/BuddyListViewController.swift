@@ -11,8 +11,8 @@ class BuddyListViewController: UIViewController{
     //currently Buddy is getting dummy data from the buddy class
     var buddies = Buddy.fetchBuddys() // array of all the buddies
     let cellScale: CGFloat = 1.0 //scale of the cell
-    
-    
+    var selectedBuddy=Buddy()
+    var numberBuddy=0
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,6 +32,11 @@ class BuddyListViewController: UIViewController{
         //set delegate and dataSource to self
         collectionView.dataSource = self
         collectionView.delegate = self
+    }
+    
+    @IBAction func expandButton(_ sender: Any) {
+        //let firstTab = self.tabBarController?.children[0] as! FriendViewController
+        //firstTab.selectedBuddy = selectedBuddy
     }
 }
 

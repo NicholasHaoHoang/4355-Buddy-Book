@@ -17,7 +17,7 @@ class Buddy{
     var name = ""
     var profilePicture: UIImage
     var isFav : Bool
-    var birthday: Date
+    var age: String
     var height : String
     var weight : String
     var likes : [String]
@@ -33,7 +33,7 @@ class Buddy{
         self.name = ""
         self.profilePicture = UIImage()
         self.isFav = false
-        self.birthday = Date()
+        self.age = ""
         self.height = ""
         self.weight = ""
         self.likes = [""]
@@ -46,11 +46,11 @@ class Buddy{
     }
     
     //constructor with parameters
-    init(name: String, profilePicture: UIImage, isFav:Bool=false, birthday: Date = Date(), height : String = "", weight : String = "", likes : [String] = [""], dislikes : [String] = [""], giftIdeas : [String] = [""], bio : String = "", importantFacts : [String] = [""], importantDates : [String] = [String()], relationships : [String] = [String()]){
+    init(name: String, profilePicture: UIImage, isFav:Bool=false, age: String = String(), height : String = "", weight : String = "", likes : [String] = [""], dislikes : [String] = [""], giftIdeas : [String] = [""], bio : String = "", importantFacts : [String] = [""], importantDates : [String] = [String()], relationships : [String] = [String()]){
         self.name = name
         self.profilePicture = profilePicture
         self.isFav = isFav
-        self.birthday = birthday
+        self.age = age
         self.height = height
         self.weight = weight
         self.likes = likes
@@ -66,7 +66,7 @@ class Buddy{
     static func fetchBuddys() -> [Buddy]{
         return [
             Buddy(name: "Bob", profilePicture: UIImage(named: "bobProfilePic")!, isFav: true,
-                  birthday: Date(timeIntervalSinceReferenceDate: -123456789.0),
+                  age : "21",
                   height : "5' 9",
                   weight : "150",
                   likes : ["Gaming","Eating"],
@@ -77,7 +77,7 @@ class Buddy{
                   importantDates : ["10/12 go to beach"],
                   relationships : ["Steven"]),
             Buddy(name: "Steven", profilePicture: UIImage(named: "stevenProfilePic")!, isFav: true,
-                  birthday: Date(timeIntervalSinceReferenceDate: -123456789.0),
+                  age : "18",
                   height : "5' 9",
                   weight : "150",
                   likes : ["Gaming","Eating"],
@@ -88,7 +88,7 @@ class Buddy{
                   importantDates : ["10/12 go to beach"],
                   relationships : ["Steven"]),
             Buddy(name: "JoAnn", profilePicture: UIImage(named: "joannProfilePic")!, isFav: true,
-                  birthday: Date(timeIntervalSinceReferenceDate: -123456789.0),
+                  age : "23",
                   height : "5' 9",
                   weight : "150",
                   likes : ["Gaming","Eating"],

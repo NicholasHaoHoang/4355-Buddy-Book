@@ -8,7 +8,31 @@
 import UIKit
 
 class FriendViewController: UIViewController {
-
+    var selectedBuddy = Buddy()
+    
+    @IBOutlet weak var expandButton: UIButton!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var heightLabel: UILabel!
+    @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var BioLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var likeLabel: UILabel!
+    @IBOutlet weak var dislikeLabel: UILabel!
+    @IBOutlet weak var factsLabel: UILabel!
+    @IBOutlet weak var profilePic: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    func updateUI(){
+        ageLabel.text = selectedBuddy.age
+        heightLabel.text = selectedBuddy.height
+        weightLabel.text = selectedBuddy.weight
+        BioLabel.text = selectedBuddy.bio
+        name.text = selectedBuddy.name
+        profilePic.image = selectedBuddy.profilePicture
+        //dateLabel.text = selectedBuddy.importantDates
+        //likeLabel.text = selectedBuddy.likes
+        //dislikeLabel.text = selectedBuddy.dislikes
+        //factsLabel.text = selectedBuddy.importantFacts
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
