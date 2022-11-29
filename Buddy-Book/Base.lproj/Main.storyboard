@@ -127,6 +127,7 @@
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title=""/>
                                                     <connections>
+                                                        <action selector="expandButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WSf-Wi-NVW"/>
                                                         <segue destination="PSQ-Gg-sym" kind="show" id="6w4-DM-Yyo"/>
                                                     </connections>
                                                 </button>
@@ -228,7 +229,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="eqf-qC-THX">
-                                <rect key="frame" x="0.0" y="-1" width="390" height="788"/>
+                                <rect key="frame" x="-1" y="-1" width="391" height="787"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0m-bb-8S3">
@@ -306,8 +307,8 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="star" catalog="system" title=""/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meetups:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrc-VH-yXg">
-                                        <rect key="frame" x="28" y="323" width="72" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrc-VH-yXg">
+                                        <rect key="frame" x="28" y="323" width="29" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -394,6 +395,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="62s-Ag-xV2"/>
+                    <connections>
+                        <outlet property="BioLabel" destination="1MC-YC-M5s" id="h12-Wm-l8m"/>
+                        <outlet property="ageLabel" destination="wtk-l5-L1P" id="axn-cX-HwY"/>
+                        <outlet property="dateLabel" destination="5R7-8X-hp8" id="YrP-11-hgq"/>
+                        <outlet property="dislikeLabel" destination="dVx-mj-3t4" id="lQY-bY-Mkg"/>
+                        <outlet property="expandButton" destination="VjU-8X-KJj" id="Pdx-4U-KKf"/>
+                        <outlet property="factsLabel" destination="kKj-fu-MBz" id="oC0-Oq-d3S"/>
+                        <outlet property="heightLabel" destination="Cvg-D8-dRD" id="mLC-M9-jMI"/>
+                        <outlet property="likeLabel" destination="TqA-tp-XYx" id="1c5-2g-t31"/>
+                        <outlet property="name" destination="rCd-mz-bYp" id="LC6-DD-icr"/>
+                        <outlet property="profilePic" destination="t0m-bb-8S3" id="O3m-h1-ruq"/>
+                        <outlet property="weightLabel" destination="NJs-IZ-NG5" id="WBk-6O-K3x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Olx-9T-Xk4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -408,7 +422,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="3MK-y5-XRg">
-                                <rect key="frame" x="0.0" y="0.0" width="389" height="787"/>
+                                <rect key="frame" x="0.0" y="-1" width="389" height="788"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="apK-RF-2yB">
@@ -463,8 +477,8 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="star" catalog="system" title=""/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meetups:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWp-U9-BoU">
-                                        <rect key="frame" x="28" y="323" width="72" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWp-U9-BoU">
+                                        <rect key="frame" x="28" y="323" width="29" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -534,6 +548,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Save"/>
                                         <connections>
+                                            <action selector="saveButton:" destination="TNS-bq-iUt" eventType="touchUpInside" id="SE4-bn-gd0"/>
                                             <segue destination="BYZ-38-t0r" kind="show" id="pky-6x-X8S"/>
                                         </connections>
                                     </button>
@@ -564,6 +579,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="n2a-hS-ReA"/>
+                    <connections>
+                        <outlet property="agebox" destination="Bgc-wF-I0S" id="MHw-5g-lh5"/>
+                        <outlet property="biobox" destination="bv8-N9-re3" id="n1z-jJ-aV7"/>
+                        <outlet property="datebox" destination="9FA-H1-HOy" id="MVD-mo-IDC"/>
+                        <outlet property="dislikebox" destination="7hb-hX-hdu" id="bWq-dg-hOH"/>
+                        <outlet property="factbox" destination="9a5-z8-yDt" id="uHw-hG-dV7"/>
+                        <outlet property="heightbox" destination="hfk-IZ-hcT" id="mxM-6h-vMW"/>
+                        <outlet property="likesbox" destination="7hb-hX-hdu" id="gfC-X4-h6h"/>
+                        <outlet property="weightbox" destination="D7R-g1-cng" id="yKJ-bX-1Bt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ycj-DA-g2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -578,7 +603,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="9hh-3Q-I7g">
-                                <rect key="frame" x="-1" y="-1" width="391" height="787"/>
+                                <rect key="frame" x="-1" y="-2" width="391" height="787"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2Y-n9-BDg">
@@ -691,6 +716,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFy-hx-6VD">
+                                        <rect key="frame" x="26" y="296" width="324" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="77L-9n-IIL"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -700,10 +732,27 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="mMI-Lc-a2L"/>
+                    <connections>
+                        <outlet property="giftLabel" destination="vFy-hx-6VD" id="WPJ-nb-Mm2"/>
+                        <outlet property="nameLabel" destination="IlC-zS-zxr" id="mhO-w3-Ha7"/>
+                        <outlet property="profilePic" destination="ge7-Wp-Zpb" id="55T-nQ-ShI"/>
+                        <outlet property="relation1" destination="uCx-LE-KMf" id="SYy-Ve-67y"/>
+                        <outlet property="relation1name" destination="Coo-ZE-pG5" id="r05-7L-Bfa"/>
+                        <outlet property="relation1pic" destination="mlE-3g-N56" id="t8K-bK-OWg"/>
+                        <outlet property="relation2" destination="ZRd-Be-Imb" id="idd-dD-zWe"/>
+                        <outlet property="relation2name" destination="Qzb-GZ-2Qy" id="Fdo-Ce-fKj"/>
+                        <outlet property="relation2pic" destination="pm1-E8-h1X" id="HUV-Jy-HNK"/>
+                        <outlet property="relation3" destination="H6L-yS-gfr" id="2hJ-SF-SLG"/>
+                        <outlet property="relation3name" destination="x2Z-xS-H6L" id="uam-0y-JMK"/>
+                        <outlet property="relation3pic" destination="z3j-ol-5Mr" id="Pr4-5f-CBd"/>
+                        <outlet property="relation4" destination="9hh-3Q-I7g" id="OJA-sO-wv1"/>
+                        <outlet property="relation4name" destination="GtJ-OZ-RXA" id="1qk-Ld-XUp"/>
+                        <outlet property="relation4pic" destination="hhW-Y1-vnz" id="9B2-s4-Y0F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ccS-cS-7Vg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2485" y="312"/>
+            <point key="canvasLocation" x="2484.6153846153848" y="311.37440758293837"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tNB-xG-7ZQ">
@@ -725,14 +774,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="t3F-ej-jOg"/>
+        <segue reference="sfN-hO-GyH"/>
         <segue reference="pky-6x-X8S"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="gift" catalog="system" width="128" height="125"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="person" catalog="system" width="128" height="121"/>
-        <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="square.and.arrow.up.circle.fill" catalog="system" width="32" height="32"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
