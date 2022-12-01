@@ -14,6 +14,7 @@ class BuddyListViewController: UIViewController{
     var selectedBuddy=Buddy()
     var numberBuddy=0
     
+    @IBOutlet weak var field: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,7 +24,7 @@ class BuddyListViewController: UIViewController{
         let cellHeight = floor(screenSize.height * cellScale) //decides the cell height
         let insetX = (view.bounds.width - cellWidth)/2.0 // decides the x inset of the cell
         let insetY = (view.bounds.height - cellHeight)/2.0 //decides the y inset of the cell
-
+        
         let layout = collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
         //sets size of cell to cellWidth and cellHeight
         layout.itemSize = CGSize(width:cellWidth, height: cellHeight)
@@ -36,6 +37,31 @@ class BuddyListViewController: UIViewController{
         
         //update Cell
         
+    }
+    
+    @IBAction func searchBar(_ sender: Any) {
+        var text: String = field.text!
+        var count = 0
+        for buddy in buddies {
+            if buddy.name == text {
+                numberBuddy=count
+                let vc = storyboard?.instantiateViewController(withIdentifier: "FriendViewController") as? FriendViewController
+                //sets VC's selectedBuddy to the one selected
+                vc?.selectedBuddy = buddies[count]
+                self.navigationController?.pushViewController(vc!, animated: true)
+            }
+            else{
+                createAlert(title: "Name not found", msg: "Please enter a valid name")
+            }
+            count=count+1
+        }
+    }
+    func createAlert(title: String, msg: String) {
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: { _ in 
+            self.dismiss(animated: true, completion: nil)
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

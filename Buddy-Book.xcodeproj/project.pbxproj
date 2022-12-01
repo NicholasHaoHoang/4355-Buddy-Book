@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FAB368A29395C8600A6F2A5 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB368929395C8600A6F2A5 /* AddViewController.swift */; };
 		3FC84BC82935A8F700A2DA23 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC84BC52935A8F700A2DA23 /* FriendViewController.swift */; };
 		3FC84BC92935A8F700A2DA23 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC84BC62935A8F700A2DA23 /* EditViewController.swift */; };
 		3FC84BCA2935A8F700A2DA23 /* ExpandedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC84BC72935A8F700A2DA23 /* ExpandedViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3FAB368929395C8600A6F2A5 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		3FC84BC52935A8F700A2DA23 /* FriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		3FC84BC62935A8F700A2DA23 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		3FC84BC72935A8F700A2DA23 /* ExpandedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandedViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				3FC84BC62935A8F700A2DA23 /* EditViewController.swift */,
 				3FC84BC72935A8F700A2DA23 /* ExpandedViewController.swift */,
 				3FC84BC52935A8F700A2DA23 /* FriendViewController.swift */,
+				3FAB368929395C8600A6F2A5 /* AddViewController.swift */,
 			);
 			path = "Buddy-Book";
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FAB368A29395C8600A6F2A5 /* AddViewController.swift in Sources */,
 				3FC84BCA2935A8F700A2DA23 /* ExpandedViewController.swift in Sources */,
 				3FC84BC92935A8F700A2DA23 /* EditViewController.swift in Sources */,
 				3FE5A5FD290A7ED0000D2B45 /* ViewController.swift in Sources */,

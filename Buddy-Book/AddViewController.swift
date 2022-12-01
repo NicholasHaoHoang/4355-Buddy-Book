@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EditViewController: UIViewController {
+class AddViewController: UIViewController {
     
     var selectedBuddy = Buddy()
     var oldName : String = "";
@@ -26,15 +26,6 @@ class EditViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        oldName = selectedBuddy.name
-        namebox.text = selectedBuddy.name
-        biobox.text! = selectedBuddy.bio
-        datebox.text! = selectedBuddy.importantDates[0]
-        likesbox.text! = selectedBuddy.likes[0]
-        dislikebox.text! = selectedBuddy.dislikes[0]
-        agebox.text! = selectedBuddy.age
-        heightbox.text! = selectedBuddy.height
-        weightbox.text! = selectedBuddy.weight
         // Do any additional setup after loading the view.
     }
     func updateFirst() {
@@ -71,3 +62,4 @@ class EditViewController: UIViewController {
     
 
 }
+
