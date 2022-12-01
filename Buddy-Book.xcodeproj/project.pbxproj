@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FC84BC82935A8F700A2DA23 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC84BC52935A8F700A2DA23 /* FriendViewController.swift */; };
+		3FC84BC92935A8F700A2DA23 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC84BC62935A8F700A2DA23 /* EditViewController.swift */; };
+		3FC84BCA2935A8F700A2DA23 /* ExpandedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC84BC72935A8F700A2DA23 /* ExpandedViewController.swift */; };
 		3FE5A5F9290A7ED0000D2B45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE5A5F8290A7ED0000D2B45 /* AppDelegate.swift */; };
 		3FE5A5FB290A7ED0000D2B45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE5A5FA290A7ED0000D2B45 /* SceneDelegate.swift */; };
 		3FE5A5FD290A7ED0000D2B45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE5A5FC290A7ED0000D2B45 /* ViewController.swift */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3FC84BC52935A8F700A2DA23 /* FriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		3FC84BC62935A8F700A2DA23 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		3FC84BC72935A8F700A2DA23 /* ExpandedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandedViewController.swift; sourceTree = "<group>"; };
 		3FE5A5F5290A7ED0000D2B45 /* Buddy-Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Buddy-Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE5A5F8290A7ED0000D2B45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FE5A5FA290A7ED0000D2B45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +121,9 @@
 				3FE5A628290AB4D8000D2B45 /* CollectionViewCell.swift */,
 				3FE5A62A290AB70F000D2B45 /* BuddyListViewController.swift */,
 				3FE5A62C290AB77F000D2B45 /* Buddy.swift */,
+				3FC84BC62935A8F700A2DA23 /* EditViewController.swift */,
+				3FC84BC72935A8F700A2DA23 /* ExpandedViewController.swift */,
+				3FC84BC52935A8F700A2DA23 /* FriendViewController.swift */,
 			);
 			path = "Buddy-Book";
 			sourceTree = "<group>";
@@ -267,9 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FC84BCA2935A8F700A2DA23 /* ExpandedViewController.swift in Sources */,
+				3FC84BC92935A8F700A2DA23 /* EditViewController.swift in Sources */,
 				3FE5A5FD290A7ED0000D2B45 /* ViewController.swift in Sources */,
 				3FE5A5F9290A7ED0000D2B45 /* AppDelegate.swift in Sources */,
 				3FE5A629290AB4D8000D2B45 /* CollectionViewCell.swift in Sources */,
+				3FC84BC82935A8F700A2DA23 /* FriendViewController.swift in Sources */,
 				3FE5A5FB290A7ED0000D2B45 /* SceneDelegate.swift in Sources */,
 				3FE5A62D290AB77F000D2B45 /* Buddy.swift in Sources */,
 				3FE5A62B290AB70F000D2B45 /* BuddyListViewController.swift in Sources */,
