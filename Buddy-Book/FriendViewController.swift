@@ -24,10 +24,11 @@ class FriendViewController: UIViewController {
     @IBOutlet weak var favButton: UIButton!
     
     //How to mark as favorite
-    @objc private func handleMarkAsFavorite(){
+    @IBAction func favButtonPressed(_ sender: Any) {
         selectedBuddy.isFav = !selectedBuddy.isFav
         updateUI()
     }
+    
     
     func updateUI(){
         ageLabel.text = selectedBuddy.age
@@ -36,17 +37,41 @@ class FriendViewController: UIViewController {
         BioLabel.text = selectedBuddy.bio
         name.text = selectedBuddy.name
         profilePic.image = selectedBuddy.profilePicture
-        favButton.addTarget(self, action: #selector(handleMarkAsFavorite), for: .touchUpInside)
+        profilePic.layer.cornerRadius = profilePic.frame.size.width/2
+        profilePic.clipsToBounds = true
+        profilePic.layer.masksToBounds = true
+        
+        //border of profile picture
+        profilePic.layer.borderColor = UIColor.purple.cgColor
+        profilePic.layer.borderWidth = 3
+        
+        
         if(selectedBuddy.isFav){
             favButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
         }else{
             favButton.setImage(UIImage(systemName: "star"), for: .normal)
         }
         
-        //dateLabel.text = selectedBuddy.importantDates
-        //likeLabel.text = selectedBuddy.likes
-        //dislikeLabel.text = selectedBuddy.dislikes
-        //factsLabel.text = selectedBuddy.importantFacts
+        var dateStr = ""
+        for i in selectedBuddy.importantDates{
+            dateStr += i + "\n"
+        }
+        var likeStr = ""
+        for i in selectedBuddy.likes{
+            likeStr += i + "\n"
+        }
+        var dislikeStr = ""
+        for i in selectedBuddy.dislikes{
+            dislikeStr += i + "\n"
+        }
+        var factsStr = ""
+        for i in selectedBuddy.importantFacts{
+            factsStr += i + "\n"
+        }
+        dateLabel.text = dateStr
+        likeLabel.text = likeStr
+        dislikeLabel.text = dislikeStr
+        factsLabel.text = factsStr
     }
     override func viewDidLoad() {
         super.viewDidLoad()
