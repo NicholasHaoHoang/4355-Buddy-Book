@@ -44,19 +44,9 @@ class AddViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if segue.identifier == "edit_to_list"{
+        if segue.identifier == "add_to_list"{
             let listVC = segue.destination as! BuddyListViewController
-            var index = -1;
-            let buddies = listVC.buddies
-            for i in buddies{
-                index = index + 1
-                if i.name == oldName{
-                    listVC.buddies[index] = selectedBuddy
-                    break;
-                }
-            }
-            
-            
+            listVC.buddies.insert(selectedBuddy,at:0)
         }
     }
     

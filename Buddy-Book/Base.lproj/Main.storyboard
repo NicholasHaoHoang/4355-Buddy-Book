@@ -1879,6 +1879,7 @@
                                                         <buttonConfiguration key="configuration" style="gray" title="Save"/>
                                                         <connections>
                                                             <action selector="saveButton:" destination="Z5j-PJ-DND" eventType="touchUpInside" id="MY0-Kc-EHJ"/>
+                                                            <segue destination="BYZ-38-t0r" kind="show" identifier="add_to_list" id="OwB-ZK-Dop"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1912,11 +1913,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="54Y-C9-8ey" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1578" y="-729"/>
+            <point key="canvasLocation" x="26" y="-697"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pky-6x-X8S"/>
+        <segue reference="OwB-ZK-Dop"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="gift" catalog="system" width="128" height="125"/>
