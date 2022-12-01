@@ -36,12 +36,12 @@ class FriendViewController: UIViewController {
         BioLabel.text = selectedBuddy.bio
         name.text = selectedBuddy.name
         profilePic.image = selectedBuddy.profilePicture
+        favButton.addTarget(self, action: #selector(handleMarkAsFavorite), for: .touchUpInside)
         if(selectedBuddy.isFav){
             favButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
         }else{
             favButton.setImage(UIImage(systemName: "star"), for: .normal)
         }
-        favButton.addTarget(self, action: #selector(handleMarkAsFavorite), for: .touchUpInside)
         
         //dateLabel.text = selectedBuddy.importantDates
         //likeLabel.text = selectedBuddy.likes

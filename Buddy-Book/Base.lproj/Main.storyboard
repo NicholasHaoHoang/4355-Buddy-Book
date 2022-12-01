@@ -90,8 +90,9 @@
                                                             <rect key="frame" x="8" y="222" width="49" height="46"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GOF-Fj-ljH">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GOF-Fj-ljH">
                                                             <rect key="frame" x="272" y="222.66666666666663" width="49" height="46"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHC-Ct-gaS">
                                                             <rect key="frame" x="65" y="238" width="19" height="12"/>
@@ -120,27 +121,27 @@
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
                                                         </button>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="CpL-DG-RgI">
-                                                            <rect key="frame" x="0.0" y="288" width="334.33333333333326" height="212"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="CpL-DG-RgI">
+                                                            <rect key="frame" x="4.6666666666666572" y="343" width="320" height="212"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="c9n-Er-yhM">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="334.33333333333331" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5c-ub-g41">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="334.33333333333331" height="21"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="21"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="21" id="9YQ-94-h3L"/>
-                                                                                <constraint firstAttribute="width" constant="334" id="yRR-4n-Vom"/>
+                                                                                <constraint firstAttribute="width" constant="320" id="yRR-4n-Vom"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRT-eK-0cd">
-                                                                            <rect key="frame" x="0.0" y="29" width="334.33333333333331" height="21"/>
+                                                                            <rect key="frame" x="0.0" y="29" width="320" height="21"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="21" id="BR6-fM-cOi"/>
-                                                                                <constraint firstAttribute="width" constant="334" id="Euq-oG-M5S"/>
+                                                                                <constraint firstAttribute="width" constant="320" id="Euq-oG-M5S"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
@@ -149,12 +150,12 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qiJ-xi-9zY">
-                                                                    <rect key="frame" x="0.0" y="81" width="334.33333333333331" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="81" width="320" height="50"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zai-f2-U9I">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="334.33333333333331" height="21"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Important Dates:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zai-f2-U9I">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="21"/>
                                                                             <constraints>
-                                                                                <constraint firstAttribute="width" constant="334" id="qMZ-Z4-aTA"/>
+                                                                                <constraint firstAttribute="width" constant="320" id="qMZ-Z4-aTA"/>
                                                                                 <constraint firstAttribute="height" constant="21" id="snY-lK-iez"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -162,9 +163,9 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AdC-I4-F0d">
-                                                                            <rect key="frame" x="0.0" y="29.000000000000014" width="334.33333333333331" height="21"/>
+                                                                            <rect key="frame" x="0.0" y="29" width="320" height="21"/>
                                                                             <constraints>
-                                                                                <constraint firstAttribute="width" constant="334" id="Qpi-IH-PzF"/>
+                                                                                <constraint firstAttribute="width" constant="320" id="Qpi-IH-PzF"/>
                                                                                 <constraint firstAttribute="height" constant="21" id="o93-uM-bZU"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -174,22 +175,22 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hvv-Tq-vKI">
-                                                                    <rect key="frame" x="0.0" y="162" width="334.33333333333331" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="162" width="320" height="50"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8b-LI-fq5">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="334.33333333333331" height="21"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Important Facts:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8b-LI-fq5">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="21"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="21" id="6vK-ZC-jm2"/>
-                                                                                <constraint firstAttribute="width" constant="334" id="RGE-SO-3gH"/>
+                                                                                <constraint firstAttribute="width" constant="320" id="RGE-SO-3gH"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCq-Kp-Jhx">
-                                                                            <rect key="frame" x="0.0" y="29" width="334.33333333333331" height="21"/>
+                                                                            <rect key="frame" x="0.0" y="29" width="320" height="21"/>
                                                                             <constraints>
-                                                                                <constraint firstAttribute="width" constant="334" id="CcO-Qq-r3a"/>
+                                                                                <constraint firstAttribute="width" constant="320" id="CcO-Qq-r3a"/>
                                                                                 <constraint firstAttribute="height" constant="21" id="Id1-52-sNV"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -209,7 +210,7 @@
                                                         <constraint firstItem="CpL-DG-RgI" firstAttribute="centerX" secondItem="fEy-sP-1ll" secondAttribute="centerX" id="N1j-Zd-oZN"/>
                                                         <constraint firstItem="Eqb-Ch-L0i" firstAttribute="top" secondItem="aYP-G2-Qg6" secondAttribute="bottom" constant="18.670000000000002" id="OUt-De-6Yt"/>
                                                         <constraint firstItem="aYP-G2-Qg6" firstAttribute="centerY" secondItem="fEy-sP-1ll" secondAttribute="centerY" constant="-200" id="U9R-yM-vSY"/>
-                                                        <constraint firstItem="CpL-DG-RgI" firstAttribute="top" secondItem="GOF-Fj-ljH" secondAttribute="bottom" id="Xhl-lH-gJY"/>
+                                                        <constraint firstAttribute="bottom" secondItem="CpL-DG-RgI" secondAttribute="bottom" constant="15" id="WXh-8X-lEr"/>
                                                         <constraint firstAttribute="bottomMargin" secondItem="Eqb-Ch-L0i" secondAttribute="bottom" constant="360" id="gh4-d1-wnZ"/>
                                                         <constraint firstItem="Eqb-Ch-L0i" firstAttribute="top" secondItem="aYP-G2-Qg6" secondAttribute="bottom" constant="18.670000000000002" id="mtS-UI-EDM"/>
                                                     </constraints>
@@ -218,6 +219,9 @@
                                                 <size key="customSize" width="329" height="570"/>
                                                 <connections>
                                                     <outlet property="age" destination="zHC-Ct-gaS" id="1yu-Jj-60z"/>
+                                                    <outlet property="bio" destination="iRT-eK-0cd" id="NhS-hM-uVx"/>
+                                                    <outlet property="dates" destination="AdC-I4-F0d" id="I5j-zs-NRj"/>
+                                                    <outlet property="facts" destination="KCq-Kp-Jhx" id="eeV-aR-JbR"/>
                                                     <outlet property="favButton" destination="mTf-my-2GM" id="xob-cz-v9F"/>
                                                     <outlet property="height" destination="KlK-sp-q5e" id="TJr-zj-vmd"/>
                                                     <outlet property="nameLabel" destination="Eqb-Ch-L0i" id="Upp-l2-MNa"/>
@@ -552,6 +556,7 @@
                         <outlet property="dislikeLabel" destination="dVx-mj-3t4" id="lQY-bY-Mkg"/>
                         <outlet property="expandButton" destination="VjU-8X-KJj" id="Pdx-4U-KKf"/>
                         <outlet property="factsLabel" destination="kKj-fu-MBz" id="oC0-Oq-d3S"/>
+                        <outlet property="favButton" destination="Nrb-Gy-11Q" id="Zu0-4O-sPJ"/>
                         <outlet property="heightLabel" destination="Cvg-D8-dRD" id="mLC-M9-jMI"/>
                         <outlet property="likeLabel" destination="TqA-tp-XYx" id="1c5-2g-t31"/>
                         <outlet property="name" destination="rCd-mz-bYp" id="LC6-DD-icr"/>
@@ -1428,7 +1433,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="t3F-ej-jOg"/>
+        <segue reference="sfN-hO-GyH"/>
         <segue reference="pky-6x-X8S"/>
     </inferredMetricsTieBreakers>
     <resources>
