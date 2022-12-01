@@ -10,7 +10,6 @@ import UIKit
 class FriendViewController: UIViewController {
     var selectedBuddy = Buddy()
     
-    @IBOutlet weak var expandButton: UIButton!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
@@ -51,28 +50,43 @@ class FriendViewController: UIViewController {
         }else{
             favButton.setImage(UIImage(systemName: "star"), for: .normal)
         }
+        var attributes = [NSAttributedString.Key: Any]()
+        attributes[.font] = UIFont.preferredFont(forTextStyle: .body)
+        attributes[.foregroundColor] = UIColor.darkGray
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.headIndent = ("•" as NSString).size(withAttributes: attributes).width
+        attributes[.paragraphStyle] = paragraphStyle
         
         var dateStr = ""
         for i in selectedBuddy.importantDates{
-            dateStr += i + "\n"
+            dateStr += "•" + i + "\n"
         }
         var likeStr = ""
         for i in selectedBuddy.likes{
-            likeStr += i + "\n"
+            likeStr += "•" + i + "\n"
         }
         var dislikeStr = ""
         for i in selectedBuddy.dislikes{
-            dislikeStr += i + "\n"
+            dislikeStr += "•" + i + "\n"
         }
         var factsStr = ""
         for i in selectedBuddy.importantFacts{
-            factsStr += i + "\n"
+            factsStr += "•" + i + "\n"
         }
         dateLabel.text = dateStr
-        likeLabel.text = likeStr
-        dislikeLabel.text = dislikeStr
+        likeLabel.attributedText = NSAttributedString(string:likeStr, attributes: attributes)
+        dislikeLabel.attributedText = NSAttributedString(string:dislikeStr, attributes: attributes)
         factsLabel.text = factsStr
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "friend_to_edit"{
+            let editVC = segue.destination as! EditViewController
+            editVC.selectedBuddy = selectedBuddy
+            
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -80,15 +94,5 @@ class FriendViewController: UIViewController {
         updateUI()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

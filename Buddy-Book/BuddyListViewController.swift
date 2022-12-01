@@ -13,6 +13,7 @@ class BuddyListViewController: UIViewController{
     let cellScale: CGFloat = 1.0 //scale of the cell
     var selectedBuddy=Buddy()
     var numberBuddy=0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
