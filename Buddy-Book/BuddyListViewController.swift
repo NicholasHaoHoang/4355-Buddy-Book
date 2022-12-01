@@ -32,14 +32,10 @@ class BuddyListViewController: UIViewController{
         //set delegate and dataSource to self
         collectionView.dataSource = self
         collectionView.delegate = self
+        
+        //update Cell
+        
     }
-    
-    @IBAction func expandButton(_ sender: Any) {
-        //let firstTab = self.tabBarController?.children[0] as! FriendViewController
-        //firstTab.selectedBuddy = selectedBuddy
-    }
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-//    }
 }
 
 //extension for Collection View
@@ -50,9 +46,25 @@ extension BuddyListViewController: UICollectionViewDataSource{
         
         //Sets the cell with identifier "buddyCell" contents
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "buddyCell", for: indexPath) as! CollectionViewCell
+        cell.layer.cornerRadius = 10.0
+        cell.layer.masksToBounds = true
         //Get the buddy at this index
         let buddy = buddies[indexPath.item]
         cell.buddy = buddy
+        cell.height.text = buddy.height
+        cell.weight.text = buddy.weight
+        cell.age.text = buddy.age
+        var dateStr = ""
+        for i in buddy.importantDates{
+            dateStr += i + "\n"
+        }
+        cell.bio.text = buddy.bio
+        var factStr = ""
+        for i in buddy.importantFacts{
+            factStr += i + "\n"
+        }
+        cell.facts.text = factStr
+        cell.dates.text = dateStr
         
         return cell
     }

@@ -21,6 +21,14 @@ class FriendViewController: UIViewController {
     @IBOutlet weak var factsLabel: UILabel!
     @IBOutlet weak var profilePic: UIImageView!
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var favButton: UIButton!
+    
+    //How to mark as favorite
+    @objc private func handleMarkAsFavorite(){
+        selectedBuddy.isFav = !selectedBuddy.isFav
+        updateUI()
+    }
+    
     func updateUI(){
         ageLabel.text = selectedBuddy.age
         heightLabel.text = selectedBuddy.height
@@ -28,6 +36,13 @@ class FriendViewController: UIViewController {
         BioLabel.text = selectedBuddy.bio
         name.text = selectedBuddy.name
         profilePic.image = selectedBuddy.profilePicture
+        if(selectedBuddy.isFav){
+            favButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
+        }else{
+            favButton.setImage(UIImage(systemName: "star"), for: .normal)
+        }
+        favButton.addTarget(self, action: #selector(handleMarkAsFavorite), for: .touchUpInside)
+        
         //dateLabel.text = selectedBuddy.importantDates
         //likeLabel.text = selectedBuddy.likes
         //dislikeLabel.text = selectedBuddy.dislikes

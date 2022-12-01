@@ -13,10 +13,10 @@ class CollectionViewCell: UICollectionViewCell{
     //IBOutlets
     @IBOutlet weak var profilePicture: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var meetups: UILabel!
+    @IBOutlet weak var bio: UILabel!
     @IBOutlet weak var dates: UILabel!
-    @IBOutlet weak var facts: UIButton!
-    @IBOutlet weak var birthday: UILabel!
+    @IBOutlet weak var facts: UILabel!
+    @IBOutlet weak var age: UILabel!
     @IBOutlet weak var height: UILabel!
     @IBOutlet weak var weight: UILabel!
     @IBOutlet weak var favButton: UIButton!
