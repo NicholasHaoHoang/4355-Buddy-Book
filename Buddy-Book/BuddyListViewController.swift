@@ -38,6 +38,8 @@ class BuddyListViewController: UIViewController{
         //let firstTab = self.tabBarController?.children[0] as! FriendViewController
         //firstTab.selectedBuddy = selectedBuddy
     }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+//    }
 }
 
 //extension for Collection View
@@ -64,6 +66,15 @@ extension BuddyListViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
         //returns the amount of buddies found
         return buddies.count
+    }
+    
+    //does action for the selected card
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+        //gets Friend VC
+        let vc = storyboard?.instantiateViewController(withIdentifier: "FriendViewController") as? FriendViewController
+        //sets VC's selectedBuddy to the one selected
+        vc?.selectedBuddy = buddies[indexPath.row]
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
 }
 
